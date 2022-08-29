@@ -16,7 +16,7 @@ namespace Application.Features.Brands.Rules
 
 		public BrandBusinessRules(IBrandRepository brandRepository)
 		{
-			_brandRepository = brandRepository;
+			_brandRepository =  brandRepository;
 		}
 
 		public async Task BrandNameCanNotBeDuplicatedWhenInserted(string name)
