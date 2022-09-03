@@ -1,4 +1,4 @@
-﻿using Application.Features.Brands.Rules;
+﻿
 using Core.Application.Pipelines.Validation;
 using FluentValidation;
 using MediatR;
@@ -10,6 +10,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Application
 {
 	public static class ApplicationServiceRegistration
@@ -20,7 +21,7 @@ namespace Application
 			services.AddAutoMapper(Assembly.GetExecutingAssembly());
 			services.AddMediatR(Assembly.GetExecutingAssembly());
 
-			services.AddScoped<BrandBusinessRules>();
+			//services.AddScoped<BrandBusinessRules>();
 
 			services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 			//services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AuthorizationBehavior<,>));
