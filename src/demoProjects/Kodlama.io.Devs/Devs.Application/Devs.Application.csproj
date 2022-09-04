@@ -20,14 +20,4 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Features\SoftwareProgrammingLanguages\Commands\DeleteSPL\" />
-    <Folder Include="Features\SoftwareProgrammingLanguages\Commands\UpdateSPL\" />
-    <Folder Include="Features\SoftwareProgrammingLanguages\Dtos\" />
-    <Folder Include="Features\SoftwareProgrammingLanguages\Constants\" />
-    <Folder Include="Features\SoftwareProgrammingLanguages\Models\" />
-    <Folder Include="Features\SoftwareProgrammingLanguages\Queries\" />
-    <Folder Include="Features\SoftwareProgrammingLanguages\Profiles\" />
-  </ItemGroup>
-
 </Project>

@@ -17,7 +17,7 @@ namespace Persistence.Contexts
 
         public BaseDbContext(DbContextOptions dbContextOptions, IConfiguration configuration) : base(dbContextOptions)
         {
-            Configuration = configuration;
+                       Configuration  = configuration;
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
