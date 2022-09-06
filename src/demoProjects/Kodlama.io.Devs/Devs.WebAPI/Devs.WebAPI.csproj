@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -23,6 +23,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Devs.Application\Devs.Application.csproj" />
+    <ProjectReference Include="..\Devs.Infrastructure\Devs.Infrastructure.csproj" />
+    <ProjectReference Include="..\Devs.Persistence\Devs.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

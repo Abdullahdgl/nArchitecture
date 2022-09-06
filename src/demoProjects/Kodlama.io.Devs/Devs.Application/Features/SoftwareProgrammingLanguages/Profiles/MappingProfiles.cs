@@ -21,6 +21,8 @@ namespace Devs.Application.Features.SoftwareProgrammingLanguages.Profiles
 			CreateMap<IPaginate<SoftwareProgrammingLanguage>, SPLListModel>().ReverseMap();
 			CreateMap<SoftwareProgrammingLanguage, SPLListDto>().ReverseMap();
 			CreateMap<SoftwareProgrammingLanguage, SPLGetByIdDto>().ReverseMap();
+			CreateMap<DeletedSPLDto, SoftwareProgrammingLanguage>().ReverseMap();
+
 
 		}
 	}

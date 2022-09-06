@@ -31,7 +31,7 @@ namespace Devs.Application.Features.SoftwareProgrammingLanguages.Commands.Create
 			public async Task<CreatedSPLDto> Handle(CreateSPLCommand request, CancellationToken cancellationToken)
 			{
 				await _softwareProgrammingLanguageBusinessRules.SoftwareProgrammingLanguageNameCanNotBeSooDuplicatedWhenInserted(request.Name);
-				SoftwareProgrammingLanguage mappedSPL =_mapper.Map<SoftwareProgrammingLanguage>(request.Name);	
+				SoftwareProgrammingLanguage mappedSPL =_mapper.Map<SoftwareProgrammingLanguage>(request);	
 				SoftwareProgrammingLanguage createdSPL = await _softwareProgrammingLanguageRepository.AddAsync(mappedSPL);
 				CreatedSPLDto createdSPLDto = _mapper.Map<CreatedSPLDto>(createdSPL);
 				return createdSPLDto;

@@ -35,7 +35,10 @@ namespace Devs.Application.Features.SoftwareProgrammingLanguages.Commands.Delete
 
 				SoftwareProgrammingLanguage deletedLanguage = await _softwareProgrammingLanguageRepository.DeleteAsync(softwareProgrammingLanguage);
 				DeletedSPLDto deletedSPLDto = _mapper.Map<DeletedSPLDto>(deletedLanguage);	
-				return deletedSPLDto;	
+				return deletedSPLDto;
+
+				
+					
 
 			}
 		}
