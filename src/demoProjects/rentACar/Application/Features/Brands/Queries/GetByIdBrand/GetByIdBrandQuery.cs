@@ -28,6 +28,7 @@ namespace Application.Features.Brands.Queries.GetByIdBrand
 			{
 				_brandRepository = brandRepository;
 				_mapper = mapper;
+				_brandBusinessRules = brandBusinessRules;	
 			}
 
 			public async Task<BrandGetByIdDto> Handle(GetByIdBrandQuery request, CancellationToken cancellationToken)
